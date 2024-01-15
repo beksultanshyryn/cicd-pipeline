@@ -1,20 +1,69 @@
-#!/usr/bin/env sh
+Script started on 2024-01-15 11:08:23+00:00 [TERM="xterm" TTY="/dev/pts/1" COLUMNS="111" LINES="31"]
+[?2004h]0;bexultan@epam2: ~/cicd-pipelinebexultan@epam2:~/cicd-pipeline$ docker buildlldddld[K[K[K[K[K[K[K[K[K[Kildi[K 
+[?2004l"docker build" requires exactly 1 argument.
+See 'docker build --help'.
 
-echo 'The following "npm" command (if executed) installs the "cross-env"'
-echo 'dependency into the local "node_modules" directory, which will ultimately'
-echo 'be stored in the Jenkins home directory. As described in'
-echo 'https://docs.npmjs.com/cli/install, the "--save-dev" flag causes the'
-echo '"cross-env" dependency to be installed as "devDependencies". For the'
-echo 'purposes of this tutorial, this flag is not important. However, when'
-echo 'installing this dependency, it would typically be done so using this'
-echo 'flag. For a comprehensive explanation about "devDependencies", see'
-echo 'https://stackoverflow.com/questions/18875674/whats-the-difference-between-dependencies-devdependencies-and-peerdependencies.'
-set -x
-# npm install --save-dev cross-env
-set +x
+Usage:  docker build [OPTIONS] PATH | URL | -
 
-echo 'The following "npm" command tests that your simple Node.js/React'
-echo 'application renders satisfactorily. This command actually invokes the test'
-echo 'runner Jest (https://facebook.github.io/jest/).'
-set -x
-npm test
+Build an image from a Dockerfile
+[?2004h]0;bexultan@epam2: ~/cicd-pipelinebexultan@epam2:~/cicd-pipeline$ docker build -t Be[K[Kbexultan-imagebimageuimage[Cimagelimagedimage[1Pimage[1Pimage[1Pmage[1Pimageuimage[Cimagelimagedimage
+[?2004l"docker build" requires exactly 1 argument.
+See 'docker build --help'.
+
+Usage:  docker build [OPTIONS] PATH | URL | -
+
+Build an image from a Dockerfile
+[?2004h]0;bexultan@epam2: ~/cicd-pipelinebexultan@epam2:~/cicd-pipeline$ docker images
+[?2004lGot permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/images/json": dial unix /var/run/docker.sock: connect: permission denied
+[?2004h]0;bexultan@epam2: ~/cicd-pipelinebexultan@epam2:~/cicd-pipeline$ docker images[K
+[?2004l
+Usage:  docker image COMMAND
+
+Manage images
+
+Commands:
+  build       Build an image from a Dockerfile
+  history     Show the history of an image
+  import      Import the contents from a tarball to create a filesystem image
+  inspect     Display detailed information on one or more images
+  load        Load an image from a tar archive or STDIN
+  ls          List images
+  prune       Remove unused images
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rm          Remove one or more images
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+
+Run 'docker image COMMAND --help' for more information on a command.
+[?2004h]0;bexultan@epam2: ~/cicd-pipelinebexultan@epam2:~/cicd-pipeline$ docker imagels[K[K ls
+[?2004lGot permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/images/json": dial unix /var/run/docker.sock: connect: permission denied
+[?2004h]0;bexultan@epam2: ~/cicd-pipelinebexultan@epam2:~/cicd-pipeline$ docker image ls[1@s[1@u[C[1@d[1@o[1@ 
+[?2004l[sudo] password for bexultan: 
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+[?2004h]0;bexultan@epam2: ~/cicd-pipelinebexultan@epam2:~/cicd-pipeline$ n[Kdi[Kocker bul[Kild imag[K[K[K[K-t by[K[Kmy-[Kepamtaskimage
+[?2004l"docker build" requires exactly 1 argument.
+See 'docker build --help'.
+
+Usage:  docker build [OPTIONS] PATH | URL | -
+
+Build an image from a Dockerfile
+[?2004h]0;bexultan@epam2: ~/cicd-pipelinebexultan@epam2:~/cicd-pipeline$ docker build -t myepamtaskimage[11Psudo docker image ls
+[?2004lREPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+[?2004h]0;bexultan@epam2: ~/cicd-pipelinebexultan@epam2:~/cicd-pipeline$ sudo docker image lsdocker build -t myepamtaskimage
+[?2004l
+
+"docker build" requires exactly 1 argument.
+See 'docker build --help'.
+
+Usage:  docker build [OPTIONS] PATH | URL | -
+
+Build an image from a Dockerfile
+[?2004h]0;bexultan@epam2: ~/cicd-pipelinebexultan@epam2:~/cicd-pipeline$ 
+[?2004l[?2004h]0;bexultan@epam2: ~/cicd-pipelinebexultan@epam2:~/cicd-pipeline$ 
+[?2004l[?2004h]0;bexultan@epam2: ~/cicd-pipelinebexultan@epam2:~/cicd-pipeline$ ls
+[?2004lDockerfile  package.json  [0m[01;34mpublic[0m  README.md  [01;34mscripts[0m  [01;34msrc[0m
+[?2004h]0;bexultan@epam2: ~/cicd-pipelinebexultan@epam2:~/cicd-pipeline$ ls -l
+[?2004ltotal 24
+-rw-rw-r-- 1 bexultan bexultan   80 Jan 15 11:01 Dockerfile
+-rw-rw-r-- 1 bexultan 
